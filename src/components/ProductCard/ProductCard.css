@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url('./../../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'open-fans-light';
+    src: url('./../../fonts/OpenSans-Light.ttf');
+}
+
+.product-card{
+    width: 20vw;
+    margin: 1vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    font-family: 'open-sans-bold';
+    
+}
+.product-image-container{
+    width: 100%;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-image{
+    width: 100%;
+    height: auto;
+    
+}
+.buy-container{
+    background-color: #29490A;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.buy-text{
+    color: white;
+    font-size: 1rem;
+    font-family: 'open-sans-bold';
+    margin-left: 1vw;
+}
+.buy-icon{
+    width:2vw;
+    height: 2vw;
+    color: white;
+}
+.product-name{
+    font-size: 1.5rem;
+    color:white
+}

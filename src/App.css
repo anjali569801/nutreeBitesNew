@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "vanity";
+  src: url("./fonts/Vanity-BoldNarrow.ttf");
+}
+@font-face {
+  font-family: "open-sans";
+  src: url("./fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: 'open-sans-light';
+  src: url('./fonts/OpenSans-Light.ttf');
+}
+body {
+  background-image: url("./assets/background-image.png");
+  background-color: black;
+  background-attachment: fixed; /* Makes the background fixed */
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center; /* Centers the image */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  z-index: -1;
+}
+.root {
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-12vh);
+  }
+}
+@keyframes slideUpMobile {
+  from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-18vh);
+  }
+}
+@keyframes slideUpText {
+  from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-13vh);
+  }
+}
+.nameLogo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.name {
+  font-family: "vanity";
+  color: white;
+  font-size: 6vw;
+
+  letter-spacing: 1.5vw;
+  text-align: center;
+  align-self: flex-end;
+}
+@media screen and (max-width: 600px) {
+  .name {
+    font-size: 20vw;
+    letter-spacing: 2.5vw;
+    word-break: break-all;
+    align-self: flex-end;
+  }
+}
+.gajak-image-container {
+  flex: 3;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gajak-image {
+  width: 30vw;
+  height: auto;
+  animation: slideUp ease-in-out 1.5s forwards;
+}
+@media screen and (max-width: 600px) {
+  .gajak-image {
+    width: 90vw;
+    height: auto;
+    animation: slideUpMobile ease-in-out 1.5s forwards;
+  }
+}
+.tagline {
+  animation: slideUpText ease-in-out 1.3s 0.2s forwards;
+  color: white;
+  font-size: 3.5vw;
+  font-family: "open-sans-light";
+  letter-spacing: 0.5vw;
+  display: flex;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.tagline span{
+  align-self:center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2vw 5vw;
+  border-radius: 0.5vw;
+}
+@media screen and (max-width: 600px) {
+
+  .tagline {
+    font-size: 5vw;
+    letter-spacing: 1vw;
+    
+  }
+}
+.section-label{
+  font-family: 'open-sans';
+  color:white;
+  font-size: 3vw;
+  letter-spacing: 0.3vw;
+  margin-left:1vw;
+}
+.products-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section {
+  height: 99vh;
+  width: 99vw;
+  display: flex;
+  flex-direction: column;
+
+  margin: 1vw;
+}
