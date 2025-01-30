@@ -12,14 +12,15 @@ const ProductCard = (props) => {
       <span className="product-name">
         {name}
       </span>
-      <div className="buy-container">
+      {/* <div className="buy-container">
 
 
-      <FaShoppingBag className = 'buy-icon'/>
+      <FaShoppingBag  className='buy-icon'/>
       <div className="buy-text">
         Buy
       </div>
-      </div>
+      </div> */}
+      <button> <FaShoppingBag className='buy-icon'/>Buy</button>
       
     </div>
   )

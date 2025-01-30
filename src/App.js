@@ -5,12 +5,14 @@ import gajak from "./assets/gajak-image.png";
 import { useState } from "react";
 import ProductCard from "./components/ProductCard/ProductCard";
 import productsList from "./data/productsList";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const products = productsList;
   return (
     <div className="root">
-      <div className="section">
+      <Navbar/>
+      <div className=" section section-1">
         <div className="nameLogo">
           <span className="name">NutreeBites</span>
         </div>
