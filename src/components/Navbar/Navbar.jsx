@@ -13,9 +13,9 @@ function Navbar() {
         {!isMenuList?<IoMenu  onClick={()=>setIsMenuList(true)} className={styles.menuIcon}/>:<MdOutlineCancelPresentation onClick={()=>setIsMenuList(false)} className={styles.menuIcon}/>}
         <div className={`${styles.LinkContainer} ${isMenuList ? styles.show : ''}`}>
         <a href='#home'>Home</a>
-        <a href='#Products'>Products</a>
+        <a href='#products'>Products</a>
         <a href='#about'>About</a>
-        <a href='#Contact'>Contact</a>
+        <a href='#contact'>Contact</a>
         </div>
 
     </div>
