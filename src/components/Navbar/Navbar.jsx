@@ -12,7 +12,7 @@ function Navbar() {
         <img  src={logo} alt='logo' className={styles.logo}></img>
         {!isMenuList?<IoMenu  onClick={()=>setIsMenuList(true)} className={styles.menuIcon}/>:<MdOutlineCancelPresentation onClick={()=>setIsMenuList(false)} className={styles.menuIcon}/>}
         <div className={`${styles.LinkContainer} ${isMenuList ? styles.show : ''}`}>
-        <a href='#home'>Home</a>
+        <a href='#'>Home</a>
         <a href='#products'>Products</a>
         <a href='#about'>About</a>
         <a href='#contact'>Contact</a>

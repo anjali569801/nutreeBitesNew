@@ -51,7 +51,7 @@ function App() {
     // landing page by me 
     <div className="root">
         <Navbar/>
-          <div className=" section section-1">
+      <div className=" section section-1">
         <div className="nameLogo">
           <span className="name">NutreeBites</span>
          </div>

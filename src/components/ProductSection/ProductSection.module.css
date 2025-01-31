@@ -17,3 +17,19 @@
     color:white;
     margin-top:10vh;
 }
+
+.productsContainer{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+@media (max-width:430px) {
+    .productsContainer{
+        padding-inline: 0px;
+        flex-direction: column;
+    }
+}
